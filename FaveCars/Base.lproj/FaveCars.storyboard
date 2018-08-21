@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6YY-FP-Whh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+        <array key="HelveticaNeueExtras.ttc">
+            <string>HelveticaNeue-CondensedBlack</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--My Fave Cars-->
+        <scene sceneID="Faz-tA-WVe">
+            <objects>
+                <tableViewController id="8Lr-dW-WCS" customClass="CarTableViewController" customModule="FaveCars" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="HQ2-zM-ekg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="carCell" rowHeight="190" id="FTw-7Q-I1Q" customClass="CarTableViewCell" customModule="FaveCars" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="190"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FTw-7Q-I1Q" id="NMP-gX-OFD">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="189.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ggq-zK-0jg">
+                                            <rect key="frame" x="8" y="9" width="359" height="170"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJD-Og-LMN">
+                                            <rect key="frame" x="16" y="19" width="35" height="35"/>
+                                            <color key="backgroundColor" red="0.24853780707618309" green="0.44384247496955753" blue="0.40596912306755573" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="35" id="GaY-56-2Uy"/>
+                                                <constraint firstAttribute="width" constant="35" id="yxt-5f-C5F"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0RV-RC-4uE">
+                                            <rect key="frame" x="16" y="138" width="343" height="41"/>
+                                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="41" id="rrC-0J-uaS"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="23"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="0RV-RC-4uE" firstAttribute="leading" secondItem="NMP-gX-OFD" secondAttribute="leadingMargin" id="5Nc-9S-meR"/>
+                                        <constraint firstItem="0RV-RC-4uE" firstAttribute="bottom" secondItem="NMP-gX-OFD" secondAttribute="bottomMargin" id="7pZ-8p-MfV"/>
+                                        <constraint firstItem="ggq-zK-0jg" firstAttribute="leading" secondItem="NMP-gX-OFD" secondAttribute="leading" constant="8" id="9OT-G1-rO3"/>
+                                        <constraint firstItem="IJD-Og-LMN" firstAttribute="leading" secondItem="NMP-gX-OFD" secondAttribute="leadingMargin" id="LgT-f8-3xY"/>
+                                        <constraint firstAttribute="trailing" secondItem="ggq-zK-0jg" secondAttribute="trailing" constant="8" id="MDw-CH-Cdp"/>
+                                        <constraint firstItem="0RV-RC-4uE" firstAttribute="trailing" secondItem="NMP-gX-OFD" secondAttribute="trailingMargin" id="MKD-VO-f5I"/>
+                                        <constraint firstAttribute="bottom" secondItem="ggq-zK-0jg" secondAttribute="bottom" constant="10.5" id="UCa-K9-XhR"/>
+                                        <constraint firstItem="IJD-Og-LMN" firstAttribute="top" secondItem="NMP-gX-OFD" secondAttribute="topMargin" constant="8" id="Zwq-1S-wSF"/>
+                                        <constraint firstItem="ggq-zK-0jg" firstAttribute="top" secondItem="NMP-gX-OFD" secondAttribute="top" constant="9" id="lYI-hr-0Z6"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="carImgView" destination="ggq-zK-0jg" id="deM-5x-VfJ"/>
+                                    <outlet property="numberLabel" destination="IJD-Og-LMN" id="KWC-eH-DFJ"/>
+                                    <outlet property="titleLabel" destination="0RV-RC-4uE" id="nco-nf-EXR"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="8Lr-dW-WCS" id="3Ik-MZ-5EB"/>
+                            <outlet property="delegate" destination="8Lr-dW-WCS" id="xVw-fn-KQc"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="My Fave Cars" id="XsK-Mo-tX8">
+                        <barButtonItem key="leftBarButtonItem" title="Load" id="5eD-Eg-TIX">
+                            <connections>
+                                <action selector="load:" destination="8Lr-dW-WCS" id="Rkq-py-Nc0"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="uEC-Ei-Fjb">
+                            <connections>
+                                <segue destination="WXi-za-iEg" kind="show" id="c1O-1V-WID"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ev8-Kc-IDE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="896.79999999999995" y="94.902548725637189"/>
+        </scene>
+        <!--Add Car View Controller-->
+        <scene sceneID="9de-ht-BCz">
+            <objects>
+                <viewController id="WXi-za-iEg" customClass="AddCarViewController" customModule="FaveCars" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OVV-91-LpU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Car Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBD-fX-6Ym">
+                                <rect key="frame" x="16" y="86" width="343" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="73T-c7-9JJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" red="0.32293129120000003" green="0.57669545420000001" blue="0.52748567580000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2UX-En-CAU">
+                                <rect key="frame" x="66" y="133" width="242" height="30"/>
+                                <color key="backgroundColor" red="0.32293129120000003" green="0.57669545420000001" blue="0.52748567580000005" alpha="0.1229093309859155" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.24853780710000001" green="0.44384247500000001" blue="0.4059691231" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVP-Sd-8fP">
+                                <rect key="frame" x="0.0" y="593" width="375" height="74"/>
+                                <color key="backgroundColor" red="0.32293129120000003" green="0.57669545420000001" blue="0.52748567580000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="iit-4Z-SWC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="SAVE CAR">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="save:" destination="WXi-za-iEg" eventType="touchUpInside" id="4i0-FN-v8N"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtM-vn-Hqo">
+                                <rect key="frame" x="66" y="171" width="242" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Ot5-t3-O2S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo-camera" translatesAutoresizingMaskIntoConstraints="NO" id="MhJ-sf-odc">
+                                <rect key="frame" x="66" y="212" width="242" height="165"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="165" id="FKT-NG-ZT2"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfW-kc-k5Y">
+                                <rect key="frame" x="66" y="385" width="242" height="40"/>
+                                <color key="backgroundColor" red="0.32293129120000003" green="0.57669545420000001" blue="0.52748567580000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="esL-Ob-Exm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="Select Car Images">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectCar:" destination="WXi-za-iEg" eventType="touchUpInside" id="fj3-DG-Oub"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NJy-NR-xjq" firstAttribute="trailing" secondItem="FBD-fX-6Ym" secondAttribute="trailing" constant="16" id="3Pj-B9-eVw"/>
+                            <constraint firstItem="tVP-Sd-8fP" firstAttribute="leading" secondItem="NJy-NR-xjq" secondAttribute="leading" id="DuZ-HK-unv"/>
+                            <constraint firstItem="wtM-vn-Hqo" firstAttribute="top" secondItem="2UX-En-CAU" secondAttribute="bottom" constant="8" id="EhU-DU-oqk"/>
+                            <constraint firstItem="yfW-kc-k5Y" firstAttribute="top" secondItem="MhJ-sf-odc" secondAttribute="bottom" constant="8" id="G4C-Z7-YBF"/>
+                            <constraint firstItem="MhJ-sf-odc" firstAttribute="leading" secondItem="NJy-NR-xjq" secondAttribute="leading" constant="66" id="KEA-TG-Npm"/>
+                            <constraint firstItem="wtM-vn-Hqo" firstAttribute="leading" secondItem="NJy-NR-xjq" secondAttribute="leading" constant="66" id="LtJ-My-iJf"/>
+                            <constraint firstItem="NJy-NR-xjq" firstAttribute="trailing" secondItem="wtM-vn-Hqo" secondAttribute="trailing" constant="67" id="MBp-Y3-p9b"/>
+                            <constraint firstItem="2UX-En-CAU" firstAttribute="top" secondItem="FBD-fX-6Ym" secondAttribute="bottom" constant="8" id="MeT-DU-KvN"/>
+                            <constraint firstItem="tVP-Sd-8fP" firstAttribute="trailing" secondItem="NJy-NR-xjq" secondAttribute="trailing" id="P5s-VW-swO"/>
+                            <constraint firstItem="FBD-fX-6Ym" firstAttribute="leading" secondItem="NJy-NR-xjq" secondAttribute="leading" constant="16" id="PoW-T7-hEF"/>
+                            <constraint firstItem="FBD-fX-6Ym" firstAttribute="top" secondItem="NJy-NR-xjq" secondAttribute="top" constant="22" id="Sk9-5f-Axg"/>
+                            <constraint firstItem="MhJ-sf-odc" firstAttribute="top" secondItem="wtM-vn-Hqo" secondAttribute="bottom" constant="20" id="YSz-0H-f8O"/>
+                            <constraint firstItem="NJy-NR-xjq" firstAttribute="trailing" secondItem="MhJ-sf-odc" secondAttribute="trailing" constant="67" id="gNN-tS-Ph4"/>
+                            <constraint firstItem="NJy-NR-xjq" firstAttribute="trailing" secondItem="yfW-kc-k5Y" secondAttribute="trailing" constant="67" id="gXh-Fr-dUI"/>
+                            <constraint firstItem="NJy-NR-xjq" firstAttribute="trailing" secondItem="2UX-En-CAU" secondAttribute="trailing" constant="67" id="kfE-Ov-Tc8"/>
+                            <constraint firstItem="yfW-kc-k5Y" firstAttribute="leading" secondItem="NJy-NR-xjq" secondAttribute="leading" constant="66" id="qm5-pO-kUQ"/>
+                            <constraint firstItem="tVP-Sd-8fP" firstAttribute="bottom" secondItem="NJy-NR-xjq" secondAttribute="bottom" id="rvp-VR-lI2"/>
+                            <constraint firstItem="2UX-En-CAU" firstAttribute="leading" secondItem="NJy-NR-xjq" secondAttribute="leading" constant="66" id="sVl-eg-9Jv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NJy-NR-xjq"/>
+                    </view>
+                    <connections>
+                        <outlet property="carImgView" destination="MhJ-sf-odc" id="LJz-kV-G7b"/>
+                        <outlet property="characterCountLabel" destination="wtM-vn-Hqo" id="1Qv-I0-yEK"/>
+                        <outlet property="nameTextField" destination="2UX-En-CAU" id="wcg-Ns-Ede"/>
+                        <outlet property="selectCarButton" destination="yfW-kc-k5Y" id="UoD-DF-vlN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LKY-vE-AvI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1661.5999999999999" y="94.902548725637189"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Uh2-e4-ZcI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6YY-FP-Whh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="W4N-Kw-Puz">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8Lr-dW-WCS" kind="relationship" relationship="rootViewController" id="KZC-ib-7Mn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ErM-22-lnL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120" y="95.352323838080963"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="photo-camera" width="512" height="512"/>
+    </resources>
+</document>
